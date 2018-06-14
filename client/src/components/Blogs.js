@@ -1,14 +1,12 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import {getBlogs} from '../actions/blogs'
+
 
 class Blogs extends React.Component {
-
-  componentDidMount() {
-    axios.get()
-      .then( res => {
-
-      })
-        .catch
-    }
+  // componentDidMount() {
+  //   this.props.dispatch(getBlogs())
+  // }
 
 
   render() {
@@ -20,4 +18,4 @@ class Blogs extends React.Component {
   }
 }
 
-export default Blogs;
+export default connect() (Blogs);
